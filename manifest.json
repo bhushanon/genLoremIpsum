@@ -1,0 +1,30 @@
+{
+  "name": "Lorem Ipsum Generator",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Random Lorem Ipsum Generator(genLoremIpsum)",
+  "homepage_url": "https://github.com/bhushanon/genLoremIpsum",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Generate Lorem Ipsum..",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "idle",
+    "management",
+    "notifications"
+  ]
+}

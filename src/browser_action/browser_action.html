@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+ <link rel="stylesheet" href="commands.css">
+</head>
+<body>
+ <form>
+
+<ul class="form-style-1">
+	<h1 id="head">Lorem Ipsum Generator</h1>
+    <li>
+        <label>Locale / Language</label>
+		<select class="field-select" name="localeSelect" id="localeSelect">
+				 <option value="locale-enUS" selected="true" >en-US (US English)</option>
+				 <option value="locale-esES">es-ES (Spanish)</option>
+				 <option value="locale-caFR">ca-FR (Canada French)</option>
+		</select>
+    </li>
+	<li>
+		<label>Paragraphs <span class="required">*</span></label>
+			<input type="number" class="form-control" name="words" value="4" id="words">&nbsp;
+			<input type="number" class="form-control" name="lines"  value="0" id="lines">
+	</li>
+    <li>
+        <label>Generated Content <span class="required">*</span></label>
+        <textarea name="generatedContent" id="generatedContent" class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+		<button type="button" name="copyButton" id="copyButton" style="utton" id="copyButton">Copy to Clipboard</button>
+		<button type="button" name="generateButton" id="generateButton" style="button" id="generateButton">Generate</button>
+	</li>
+</ul>
+</form>
+<body>
+<script type="text/javascript" src="commands.js"></script>
+</html>
