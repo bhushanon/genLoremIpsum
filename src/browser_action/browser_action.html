@@ -1,32 +1,37 @@
 <!doctype html>
 <head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
  <link rel="stylesheet" href="commands.css">
 </head>
 <body>
  <form>
 
 <ul class="form-style-1">
-	<h1 id="head">Lorem Ipsum Generator</h1>
+	<h2 id="head">Lorem Ipsum Generator</h2>
     <li>
         <label>Locale / Language</label>
 		<select class="field-select" name="localeSelect" id="localeSelect">
 				 <option value="locale-enUS" selected="true" >en-US (US English)</option>
-				 <option value="locale-esES">es-ES (Spanish)</option>
-				 <option value="locale-caFR">ca-FR (Canada French)</option>
+				 <option value="locale-esES">es-ES Spanish (Mexico)</option>
+				 <option value="locale-caFR">ca-FR French (Canada)</option>
+				 <option value="locale-arSA">ar-SA Arabic (Saudi Arabia)</option>
 		</select>
     </li>
 	<li>
-		<label>Paragraphs <span class="required">*</span></label>
-			<input type="number" class="form-control" name="words" value="4" id="words">&nbsp;
-			<input type="number" class="form-control" name="lines"  value="0" id="lines">
+		<label>Number of Words <span class="required">*</span></label>
+			<input type="number" class="field-long" name="words" value="50" id="words">
+			<!-- input type="number" class="form-control" name="lines"  value="0" id="lines" -->
 	</li>
     <li>
         <label>Generated Content <span class="required">*</span></label>
         <textarea name="generatedContent" id="generatedContent" class="field-long field-textarea"></textarea>
     </li>
     <li>
-		<button type="button" name="copyButton" id="copyButton" style="utton" id="copyButton">Copy to Clipboard</button>
 		<button type="button" name="generateButton" id="generateButton" style="button" id="generateButton">Generate</button>
+		<button type="button" name="copyButton" id="copyButton" style="utton" id="copyButton">Copy to Clipboard</button>
+	</li>
+	<li>
+		<span class="field-long">version 1.0</span>
 	</li>
 </ul>
 </form>
